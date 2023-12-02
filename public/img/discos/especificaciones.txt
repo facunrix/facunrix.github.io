@@ -1,0 +1,43 @@
+Disco Rigido WD 12TB Gold 7.2K RPM 256MB
+----------------------------------------
+tipo de conexion: sata
+consumo: 10w
+tipo de disco: mecanico
+memoria cache: 256MB
+velocidad de rotacion: 7200rpm
+capacidad: 12000GB (12TB)
+
+Disco Rígido WD 1TB BLUE 64MB SATA 6.0GB/s 
+------------------------------------------
+
+tipo de conexion: sata
+consumo: 30w
+tipo de disco: mecanico
+memoria cache: 64MB
+velocidad de rotacion: 7200rpm
+capacidad: 1000GB (1TB)
+
+Disco Solido SSD M.2 Team 2TB T-Create Classic 5000MB/s NVMe PCI-E Gen4
+-------------------------------------------------
+
+tipo de conexion: m2
+consumo: 5w
+tipo de disco: solido
+memoria cache: 0MB
+velocidad de rotacion: 0rpm
+capacidad: 2000GB (2TB)
+velocidad lectura secuencial: 5000MB/s
+velocidad escritura secuencial: 4400MB/s
+
+Disco Solido SSD Hikvision 256GB E100
+--------------------------------------
+
+tipo de conexion: sata
+consumo: 4w
+tipo de disco: solido
+memoria cache: 128MB
+velocidad de rotacion: 0rpm
+capacidad: 256GB
+velocidad lectura secuencial: 550MB/s
+velocidad escritura secuencial: 500MB/s
+

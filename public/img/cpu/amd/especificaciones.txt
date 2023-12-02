@@ -1,0 +1,55 @@
+ryzen 3 
+-------
+modelo:4100
+nucleos:4
+hilos:8
+frecuencia:3.8 ghz
+frecuencia max: 4.0ghz
+cache l1: 256KB
+cache l2: 2MB
+cache l3: 4MB
+tdp predeterminado: 65w
+socket: am4
+temp max: 95°C
+
+ryzen 5 
+-------
+modelo:4600g
+nucleos:6
+hilos:12
+frecuencia:3.7 ghz 
+frecuencia max:4.2 ghz 
+cache l1: 384KB
+cache l2: 3MB
+cache l3: 8MB
+tdp predeterminado: 65w
+socket: am4
+temp max: 95°C
+
+ryzen 7 
+-------
+modelo:7700
+nucleos:8
+hilos:16
+frecuencia:3.8 ghz
+frecuencia max: 5.3 ghz
+cache l1: 512 KB
+cache l2: 8 MB
+cache l3: 32MB
+tdp predeterminado: 65w
+socket:am5
+temp max:95°C 
+
+ryzen 9 
+-------
+modelo:5900x
+nucleos: 12
+hilos: 24
+frecuencia: 3.7ghz
+frecuencia max: 4.8ghz
+cache l2: 6MB
+cache l3: 64MB
+tdp predeterminado: 105w
+socket:am4
+temp max: 90°C
+

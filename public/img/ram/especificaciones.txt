@@ -1,0 +1,34 @@
+Memoria Adata DDR4 (2x8GB) 16GB 5000MHz XPG Spectrix D50 Xtreme RGB CL19
+---------------------------------------
+capacidad: 16GB
+velocidad: 5000MHZ
+tipo: DDR4
+latencia: 19cl
+voltaje: 1.50v
+
+Memoria Team DDR4 64GB (2x32GB) 2666MHz T-Create
+------------------------------------------------
+
+capacidad: 64GB
+velocidad: 2666MHZ
+tipo: DDR4
+latencia: 19cl
+voltaje: 1.20v
+
+Memoria Adata DDR4 4GB 2666MHz Value 
+-------------------------------------
+
+capacidad: 4GB
+velocidad: 2666MHZ
+tipo: DDR4
+latencia: 19cl
+voltaje: 1.20v
+
+Memoria Corsair DDR4 4GB 2400Mhz Value
+--------------------------------------
+
+capacidad: 4GB
+velocidad: 2400MHZ
+tipo: DDR4
+latencia: 16cl
+voltaje: 1.20v

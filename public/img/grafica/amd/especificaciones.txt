@@ -1,0 +1,44 @@
+AMD Radeon RX 6900 XT 
+---------------------
+frecuencia base: 1825MHz
+frecuencia maxima: 2250MHz
+tamaño de memoria: 16GB
+tipo de memoria: GDDR6
+contectores de video: 1xHDMI 2.1-2xDisplayPort 1.4
+resolucion maxima: 7680x4320px
+consumo de energia recomendado: 300w
+Soporte de API gráficas: DirectX 12 Ultimate, Vulkan, OpenGL 4.6
+
+
+AMD Radeon R9 290
+---------------------
+frecuencia base: 947MHz
+frecuencia maxima: 1000MHz
+tamaño de memoria: 4GB
+tipo de memoria: GDDR5
+contectores de video: 1xHDMI-1xDisplayPort-2xDVI
+resolucion maxima: 4096x2160px
+consumo de energia recomendado: 275w 
+Soporte de API gráficas: DirectX 12 Ultimate, Vulkan, OpenGL 4.6
+
+AMD Radeon HD 5450
+-----------------
+frecuencia base: 650MHz
+frecuencia maxima: 650MHz
+tamaño de memoria: 1GB o 2GB
+tipo de memoria: DDR3
+contectores de video: 1xHDMI-1xDVI-1xVGA
+resolucion maxima: 2560x1600px
+consumo de energia recomendado: 19w 
+Soporte de API gráficas: DirectX11, OpenGL 3.2
+
+AMD Radeon RX 580
+------------------
+frecuencia base: 1257MHz
+frecuencia maxima: 1340MHz
+tamaño de memoria: 4GB
+tipo de memoria: GDDR5
+contectores de video: 1xHDM-3xDiplsayPort-1xDVI-D
+resolucion maxima: 7680x4320px
+consumo de energia recomendado: 150w 
+Soporte de API gráficas: DirectX 12, Vulkan, OpenGL 4.5

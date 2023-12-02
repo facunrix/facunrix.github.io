@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Cambié el color de fondo a un gris más claro */
+    font-family: 'Arial', sans-serif; /* Utilicé una fuente más común */
+    line-height: 1.2;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-brand {
+    color: #fff !important;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.dropdown-menu {
+    background-color: #343a40;
+}
+
+.dropdown-item {
+    color: #fff !important;
+    padding: .5rem 1rem;
+}
+
+.card {
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.custom-carousel {
+    max-width: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+h2 {
+    color: #343a40;
+    border-bottom: 2px solid #343a40;
+    padding-bottom: 10px;
+}
+
+.btn-outline-success {
+    color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-outline-success:hover {
+    background-color: #28a745;
+    color: #fff;
+}

@@ -1,0 +1,9 @@
+
+frecuencia base: 
+frecuencia maxima: 
+tamaño de memoria:
+tipo de memoria: 
+contectores de video: 
+resolucion maxima: 
+consumo de energia recomendado: 
+Soporte de API gráficas:

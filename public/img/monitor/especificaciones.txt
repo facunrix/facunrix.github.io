@@ -1,0 +1,69 @@
+Monitor LG LCD 49" 49WL95C Curvo Ultra Wide DUAL QHD
+----------------------------------------------------
+
+pulgadas: 49
+resolucion maxima: 5120x1440px
+maxima frecuencia: 60hz
+tiempo de respuesta: 5ms
+consumo energetico: 70w
+tipo de fuente: interna
+ancho: 1215mm
+alto: 366mm
+conectores: 2xhdmi-1xdisplay port-4xusb 3.0-1xusb 3.1 
+
+Monitor Gamer LG 32" 32GQ950-B IPS 4K 144Hz 1ms GSync FreeSync
+-------------------------------------------------------
+
+pulgadas: 32
+resolucion maxima: 3840x2160
+maxima frecuencia: 144HZ
+tiempo de respuesta: 1ms
+consumo energetico: 95w
+tipo de fuente: externa
+ancho: 719 mm
+alto: 421 mm
+conectores: 2xhdmi-1xdisplay port-2xusb 3.0
+
+
+Monitor Philips 19" HDMI VGA
+--------------------------------------------------------
+
+pulgadas: 19
+resolucion maxima: 1366x768
+maxima frecuencia:60HZ
+tiempo de respuesta: 5ms
+consumo energetico: 9w
+tipo de fuente: interna
+ancho: 437
+alto: 273
+conectores: 1xvga-1xhdmi
+
+
+Monitor LG LED 19'' 19M38A-B VGA
+-------------------------------------------------------------
+
+pulgadas: 19
+resolucion maxima: 1366x768
+maxima frecuencia: 60HZ
+tiempo de respuesta: 5ms
+consumo energetico: 13w
+tipo de fuente: externa
+ancho: 441mm
+alto:278mm
+conectores: 1xvga
+
+
+-------------------------------------------------------------
+
+pulgadas:
+resolucion maxima:
+maxima frecuencia:
+tiempo de respuesta: 
+consumo energetico:
+tipo de fuente:
+ancho: 
+alto:
+
+
+
+
