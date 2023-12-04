@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
     margin: 0;
     padding: 0;
@@ -16,14 +17,20 @@ footer {
     width: 100%;
 }
 
+/* Navbar */
 .navbar {
-    background-color: #343a40;
+    background-color: #343a40 !important; /* Asegura que el fondo sea oscuro */
 }
 
 .navbar-brand {
     color: #fff !important;
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+.navbar-toggler {
+    color: #fff;
+    border: 1px solid #fff;
 }
 
 .navbar-nav .nav-link {
@@ -33,14 +40,14 @@ footer {
 }
 
 .dropdown-menu {
-    background-color: #343a40;
+    background-color: #343a40; /* Color de fondo del dropdown */
 }
 
 .dropdown-item {
-    color: #fff !important;
-    padding: .5rem 1rem;
+    color: #fff !important; /* Color del texto del dropdown item */
 }
 
+/* Card */
 .card {
     margin: 20px;
     border: 1px solid #ddd;
@@ -59,6 +66,7 @@ footer {
     border-top-right-radius: 10px;
 }
 
+/* Custom Carousel */
 .custom-carousel {
     max-width: 300px;
     margin: 10px;
@@ -66,16 +74,19 @@ footer {
     overflow: hidden;
 }
 
+/* Container */
 .container {
-    margin-top: 50px;
+    margin-top: 70px; /* Ajusta el margen para evitar solapamiento con el navbar */
 }
 
+/* Heading 2 */
 h2 {
     color: #343a40;
     border-bottom: 2px solid #343a40;
     padding-bottom: 10px;
 }
 
+/* Button Outline Success */
 .btn-outline-success {
     color: #28a745;
     border-color: #28a745;
@@ -84,4 +95,18 @@ h2 {
 .btn-outline-success:hover {
     background-color: #28a745;
     color: #fff;
+}
+
+/* Offcanvas */
+.offcanvas {
+    background-color: #343a40; /* Color de fondo del offcanvas */
+    color: #fff; /* Color del texto del offcanvas */
+}
+
+.offcanvas-header {
+    border-bottom: 1px solid #fff; /* Borde inferior del header del offcanvas */
+}
+
+.offcanvas-title {
+    color: #fff !important; /* Color del título del offcanvas */
 }
