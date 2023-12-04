@@ -15,6 +15,7 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+    margin-top: 20px;
 }
 
 /* Navbar */
@@ -47,9 +48,13 @@ footer {
     color: #fff !important; /* Color del texto del dropdown item */
 }
 
+.dropdown-item:hover {
+    color: #000!important;
+}
+
 /* Card */
 .card {
-    margin: 20px;
+    margin: 40px;
     border: 1px solid #ddd;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
@@ -109,4 +114,12 @@ h2 {
 
 .offcanvas-title {
     color: #fff !important; /* Color del título del offcanvas */
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-answer {
+    display: none;
 }
