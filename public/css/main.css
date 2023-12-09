@@ -110,7 +110,7 @@ h2 {
 
 /* Offcanvas */
 .offcanvas {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
     /* Fondo semi-transparente */
     width: 30%;
     /* Ancho personalizado */
@@ -119,6 +119,10 @@ h2 {
 .offcanvas-header {
     border-bottom: none;
     /* Sin borde en la cabecera */
+}
+
+.dropdown-menu{
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .offcanvas-title {
