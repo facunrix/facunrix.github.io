@@ -4,17 +4,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <link rel="stylesheet" href="./public/css/main.css">
 
   <title>Productos</title>
-  
+
   <style>
     @media (max-width: 768px) {
       .card {
-        margin: 20px 20px;
+        margin: 15px 10px;
       }
+    }
+
+    @media (max-width: 435px) {
+      .card-body {
+        display: none;
+      }
+    }
+
+    .card:hover .card-body {
+      display: block;
+    }
+
+    .card.expanded {
+      transform: scale(1.2);
+      z-index: 1;
     }
   </style>
 
@@ -22,285 +38,298 @@
 
 <body>
 
-<header>
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container-fluid">
-      <a href="index.html" class="navbar-brand text-info fw-semibold fs-4">Axa</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <section class="offcanvas offcanvas-start" id="menuLateral" tabindex="-1">
-        <div class="offcanvas-header" data-bs-theme="dark">
-          <h5 class="offcanvas-title text-info">Axa</h5>
-          <button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="offcanvas"></button>
-        </div>
-        <div class="offcanvas-body d-flex flex-column justify-content-between px-0">
-          <ul class="navbar-nav fs-5 justify-content-evenly">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Productos
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="productosDropdown">
-                <li><a class="dropdown-item" href="#memoria">Memorias</a></li>
-                <li><a class="dropdown-item" href="#almacenamiento">Almacenamiento</a></li>
-                <li><a class="dropdown-item" href="#gpu">GPU</a></li>
-                <li><a class="dropdown-item" href="#cpu">CPU</a></li>
-                <li><a class="dropdown-item" href="#psu">PSU</a></li>
-                <li><a class="dropdown-item" href="#motherboard">Motherboard</a></li>
-              </ul>
-            </li>
-            <li class="nav-item p-3 py-md-1">
-              <a href="nosotros.html" class="nav-link">Nosotros</a>
-            </li>
-            <li class="nav-item p-3 py-md-1">
-              <a href="ayuda.html" class="nav-link">Ayuda</a>
-            </li>
-          </ul>
-          <div class="d-lg-none align-self-center py-3">
-            <a href=""><i class="bi bi-twitter px-2 text-info fs-2"></i></a>
-            <a href=""><i class="bi bi-facebook px-2 text-info fs-2"></i></a>
-            <a href=""><i class="bi bi-github px-2 text-info fs-2"></i></a>
-            <a href=""><i class="bi bi-whatsapp px-2 text-info fs-2"></i></a>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand d-flex align-items-center text-info fw-bold fs-4">
+          <img src="./public/img/cpu/amd/1.png" alt="Logo Axa" width="50" height="50" class="me-2">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <section class="offcanvas offcanvas-start" id="menuLateral" tabindex="-1">
+          <div class="offcanvas-header" data-bs-theme="dark">
+            <a href="index.html" class="navbar-brand d-flex align-items-center text-info fw-bold fs-4">
+              <img src="./public/img/cpu/amd/1.png" alt="Logo Axa" width="50" height="50" class="me-2">
+            </a>
+            <button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="offcanvas"></button>
           </div>
+
+          <div class="offcanvas-body ps-0">
+            <ul class="navbar-nav fs-5">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Productos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="productosDropdown">
+                  <li><a class="dropdown-item" href="#memoria">Memorias</a></li>
+                  <li><a class="dropdown-item" href="#almacenamiento">Almacenamiento</a></li>
+                  <li><a class="dropdown-item" href="#gpu">GPU</a></li>
+                  <li><a class="dropdown-item" href="#cpu">CPU</a></li>
+                  <li><a class="dropdown-item" href="#psu">PSU</a></li>
+                  <li><a class="dropdown-item" href="#motherboard">Motherboard</a></li>
+                </ul>
+              </li>
+              <li class="nav-item p-3 py-md-1">
+                <a href="nosotros.html" class="nav-link">Nosotros</a>
+              </li>
+              <li class="nav-item p-3 py-md-1">
+                <a href="ayuda.html" class="nav-link">Ayuda</a>
+              </li>
+            </ul>
+            <div class="d-lg-none align-self-center py-3">
+              <a href=""><i class="bi bi-twitter px-2 text-info fs-2"></i></a>
+              <a href=""><i class="bi bi-facebook px-2 text-info fs-2"></i></a>
+              <a href=""><i class="bi bi-github px-2 text-info fs-2"></i></a>
+              <a href=""><i class="bi bi-whatsapp px-2 text-info fs-2"></i></a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </nav>
+  </header>
+
+
+  <section id="memorias">
+    <div class="d-flex justify-content-center align-items-center">
+      <div class="card" style="width: 18rem;">
+        <div class="text-center"></div>
+        <img src="./public/img/ram/1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Memoria RAM 8GB</p>
+          <p class="card-text">Precio: $100</p>
         </div>
-      </section>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="./public/img/ram/2.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Memoria RAM 16GB</p>
+          <p class="card-text">Precio: $120</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="./public/img/ram/3.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Memoria RAM 32GB</p>
+          <p class="card-text">Precio: $80</p>
+        </div>
+      </div>
     </div>
-  </nav>
-</header>
+  </section>
 
 
-<section id="memorias">
-  <div class="d-flex justify-content-center align-items-center">
-    <div class="card" style="width: 18rem;">
-      <img src="./public/img/ram/1.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Memoria RAM Axa 8GB DDR4</p>
-        <p class="card-text">Precio: $80</p>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="./public/img/ram/2.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Memoria RAM Axa 16GB DDR4</p>
-        <p class="card-text">Precio: $120</p>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="./public/img/ram/3.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Memoria RAM Axa 32GB DDR4</p>
-        <p class="card-text">Precio: $200</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="almacenamiento">
-  <div class="d-flex justify-content-between">
-    <div class="card" style="width: 18rem;">
-      <img src="./public/img/discos/1.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Disco Duro Axa 1TB HDD</p>
-        <p class="card-text">Precio: $60</p>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="./public/img/discos/2.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">SSD Axa 500GB SATA</p>
-        <p class="card-text">Precio: $80</p>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="./public/img/discos/3.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">SSD Axa 1TB NVMe</p>
-        <p class="card-text">Precio: $120</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="gpu">
-  <div class="d-flex justify-content-between">
-    <div class="card" style="width: 18rem;">
-      <img src="./public/img/grafica/amd/1.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">AMD Radeon RX 5600 XT</p>
-        <p class="card-text">Precio: $300</p>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="./public/img/grafica/amd/2.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">AMD Radeon RX 6700 XT</p>
-        <p class="card-text">Precio: $500</p>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="./public/img/grafica/amd/3.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">AMD Radeon RX 6800 XT</p>
-        <p class="card-text">Precio: $700</p>
-      </div>
-    </div>
-  </div>
-  <div class="d-flex justify-content-between">
-    <div class="card" style="width: 18rem;">
-      <img src="./public/img/grafica/nvidia/1.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">NVIDIA GeForce GTX 1660</p>
-        <p class="card-text">Precio: $250</p>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="./public/img/grafica/nvidia/2.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">NVIDIA GeForce RTX 3060</p>
-        <p class="card-text">Precio: $450</p>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="./public/img/grafica/nvidia/3.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">NVIDIA GeForce RTX 3080</p>
-        <p class="card-text">Precio: $700</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="cpu">
-  <div class="d-flex justify-content-between">
-    <div class="card" style="width: 18rem;">
-      <img src="./public/img/cpu/intel/1.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Intel Core i5-10400</p>
-        <p class="card-text">Precio: $250</p>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="./public/img/cpu/intel/2.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Intel Core i7-10700K</p>
-        <p class="card-text">Precio: $400</p>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="./public/img/cpu/intel/3.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Intel Core i9-10900K</p>
-        <p class="card-text">Precio: $600</p>
-      </div>
-    </div>
-  </div>
-  <div class="d-flex justify-content-between">
-    <div class="card" style="width: 18rem;">
-      <img src="./public/img/cpu/amd/1.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">AMD Ryzen 5 3600</p>
-        <p class="card-text">Precio: $250</p>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="./public/img/cpu/amd/2.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">AMD Ryzen 7 5800X</p>
-        <p class="card-text">Precio: $450</p>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="./public/img/cpu/amd/3.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">AMD Ryzen 9 5900X</p>
-        <p class="card-text">Precio: $650</p>
-      </div>
-    </div>
-  </div>
-</section>
 
 
-<section id="psu">
-  <div class="d-flex justify-content-between">
-    <div class="card" style="width: 18rem;">
-      <img src="./public/img/psu/1.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Fuente Atx 500 Watts</p>
-        <p class="card-text">Precio: $60</p>
+  <section id="almacenamiento">
+    <div class="d-flex justify-content-center align-items-center">
+      <div class="card" style="width: 18rem;">
+        <img src="./public/img/discos/1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Disco Duro Axa 1TB HDD</p>
+          <p class="card-text">Precio: $60</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="./public/img/discos/2.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">SSD Axa 500GB SATA</p>
+          <p class="card-text">Precio: $80</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="./public/img/discos/3.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">SSD Axa 1TB NVMe</p>
+          <p class="card-text">Precio: $120</p>
+        </div>
       </div>
     </div>
-    <div class="card" style="width: 18rem;">
-      <img src="./public/img/psu/2.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Fuente Atx 500 Watts</p>
-        <p class="card-text">Precio: $80</p>
+  </section>
+
+  <section id="gpu">
+    <div class="d-flex justify-content-center align-items-center">
+      <div class="card" style="width: 18rem;">
+        <img src="./public/img/grafica/amd/1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">AMD Radeon RX 5600 XT</p>
+          <p class="card-text">Precio: $300</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="./public/img/grafica/amd/2.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">AMD Radeon RX 6700 XT</p>
+          <p class="card-text">Precio: $500</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="./public/img/grafica/amd/3.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">AMD Radeon RX 6800 XT</p>
+          <p class="card-text">Precio: $700</p>
+        </div>
       </div>
     </div>
-    <div class="card" style="width: 18rem;">
-      <img src="./public/img/psu/3.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Fuente Atx 500 Watts</p>
-        <p class="card-text">Precio: $120</p>
+    <div class="d-flex justify-content-center align-items-center">
+      <div class="card" style="width: 18rem;">
+        <img src="./public/img/grafica/nvidia/1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">NVIDIA GeForce GTX 1660</p>
+          <p class="card-text">Precio: $250</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="./public/img/grafica/nvidia/2.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">NVIDIA GeForce RTX 3060</p>
+          <p class="card-text">Precio: $450</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="./public/img/grafica/nvidia/3.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">NVIDIA GeForce RTX 3080</p>
+          <p class="card-text">Precio: $700</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <section id="cpu">
+    <div class="d-flex justify-content-center align-items-center">
+      <div class="card" style="width: 18rem;">
+        <img src="./public/img/cpu/intel/1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Intel Core i5-10400</p>
+          <p class="card-text">Precio: $250</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="./public/img/cpu/intel/2.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Intel Core i7-10700K</p>
+          <p class="card-text">Precio: $400</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="./public/img/cpu/intel/3.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Intel Core i9-10900K</p>
+          <p class="card-text">Precio: $600</p>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center align-items-center">
+      <div class="card" style="width: 18rem;">
+        <img src="./public/img/cpu/amd/1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">AMD Ryzen 5 3600</p>
+          <p class="card-text">Precio: $250</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="./public/img/cpu/amd/2.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">AMD Ryzen 7 5800X</p>
+          <p class="card-text">Precio: $450</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="./public/img/cpu/amd/3.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">AMD Ryzen 9 5900X</p>
+          <p class="card-text">Precio: $650</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
-<section id="motherboard">
-  <div class="d-flex justify-content-between">
-    <div class="card" style="width: 18rem;">
-      <img src="./public/img/mother/amd/1.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Motherboard Axa AM4</p>
-        <p class="card-text">Precio: $150</p>
+  <section id="psu">
+    <div class="d-flex justify-content-center align-items-center">
+      <div class="card" style="width: 18rem;">
+        <img src="./public/img/psu/1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Fuente Atx 500 Watts</p>
+          <p class="card-text">Precio: $60</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="./public/img/psu/2.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Fuente Atx 500 Watts</p>
+          <p class="card-text">Precio: $80</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="./public/img/psu/3.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Fuente Atx 500 Watts</p>
+          <p class="card-text">Precio: $120</p>
+        </div>
       </div>
     </div>
-    <div class="card" style="width: 18rem;">
-      <img src="./public/img/mother/amd/2.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Motherboard Axa B450</p>
-        <p class="card-text">Precio: $120</p>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="./public/img/mother/amd/3.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Motherboard Axa X570</p>
-        <p class="card-text">Precio: $200</p>
-      </div>
-    </div>
-  </div>
-  <div class="d-flex justify-content-between">
-    <div class="card" style="width: 18rem;">
-      <img src="./public/img/mother/intel/1.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Motherboard Axa LGA1200</p>
-        <p class="card-text">Precio: $180</p>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="./public/img/mother/intel/2.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Motherboard Axa LGA1200</p>
-        <p class="card-text">Precio: $180</p>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="./public/img/mother/intel/3.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Motherboard Axa LGA1200</p>
-        <p class="card-text">Precio: $180</p>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<footer>
-  <span>© 2023 Derechos Reservados</span>
-</footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <section id="motherboard">
+    <div class="d-flex justify-content-center align-items-center">
+      <div class="card" style="width: 18rem;">
+        <img src="./public/img/mother/amd/1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Motherboard Axa AM4</p>
+          <p class="card-text">Precio: $150</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="./public/img/mother/amd/2.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Motherboard Axa B450</p>
+          <p class="card-text">Precio: $120</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="./public/img/mother/amd/3.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Motherboard Axa X570</p>
+          <p class="card-text">Precio: $200</p>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center align-items-center">
+      <div class="card" style="width: 18rem;">
+        <img src="./public/img/mother/intel/1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Motherboard Axa LGA1200</p>
+          <p class="card-text">Precio: $180</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="./public/img/mother/intel/2.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Motherboard Axa LGA1200</p>
+          <p class="card-text">Precio: $180</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="./public/img/mother/intel/3.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Motherboard Axa LGA1200</p>
+          <p class="card-text">Precio: $180</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2023 Derechos Reservados</span>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

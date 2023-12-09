@@ -2,8 +2,10 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa; /* Cambié el color de fondo a un gris más claro */
-    font-family: 'Arial', sans-serif; /* Utilicé una fuente más común */
+    background-color: #f8f9fa;
+    /* Cambié el color de fondo a un gris más claro */
+    font-family: 'Arial', sans-serif;
+    /* Utilicé una fuente más común */
     line-height: 1.2;
 }
 
@@ -20,7 +22,8 @@ footer {
 
 /* Navbar */
 .navbar {
-    background-color: #343a40 !important; /* Asegura que el fondo sea oscuro */
+    background-color: #343a40 !important;
+    /* Asegura que el fondo sea oscuro */
 }
 
 .navbar-brand {
@@ -41,15 +44,17 @@ footer {
 }
 
 .dropdown-menu {
-    background-color: #343a40; /* Color de fondo del dropdown */
+    background-color: #343a40;
+    /* Color de fondo del dropdown */
 }
 
 .dropdown-item {
-    color: #fff !important; /* Color del texto del dropdown item */
+    color: #fff !important;
+    /* Color del texto del dropdown item */
 }
 
 .dropdown-item:hover {
-    color: #000!important;
+    color: #000 !important;
 }
 
 /* Card */
@@ -81,7 +86,8 @@ footer {
 
 /* Container */
 .container {
-    margin-top: 70px; /* Ajusta el margen para evitar solapamiento con el navbar */
+    margin-top: 70px;
+    /* Ajusta el margen para evitar solapamiento con el navbar */
 }
 
 /* Heading 2 */
@@ -104,16 +110,41 @@ h2 {
 
 /* Offcanvas */
 .offcanvas {
-    background-color: #343a40; /* Color de fondo del offcanvas */
-    color: #fff; /* Color del texto del offcanvas */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Fondo semi-transparente */
+    width: 30%;
+    /* Ancho personalizado */
 }
 
 .offcanvas-header {
-    border-bottom: 1px solid #fff; /* Borde inferior del header del offcanvas */
+    border-bottom: none;
+    /* Sin borde en la cabecera */
 }
 
 .offcanvas-title {
-    color: #fff !important; /* Color del título del offcanvas */
+    color: #fff;
+    /* Color del título */
+}
+
+
+.navbar-nav {
+    text-align: center;
+    /* Centrar elementos del menú */
+}
+
+.navbar-nav a {
+    color: #fff !important;
+    /* Color del texto del menú */
+}
+
+.btn-close {
+    color: #fff;
+    /* Color del botón de cierre */
+}
+
+.btn-close:hover {
+    color: #fff;
+    /* Color del botón de cierre al pasar el ratón */
 }
 
 .faq-item {
@@ -123,3 +154,4 @@ h2 {
 .faq-answer {
     display: none;
 }
+
