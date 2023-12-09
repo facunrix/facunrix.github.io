@@ -44,7 +44,7 @@ footer {
 }
 
 .dropdown-menu {
-    background-color: #343a40;
+    background-color: rgba(110, 107, 107, 0.6);
     /* Color de fondo del dropdown */
 }
 
@@ -119,10 +119,6 @@ h2 {
 .offcanvas-header {
     border-bottom: none;
     /* Sin borde en la cabecera */
-}
-
-.dropdown-menu{
-    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .offcanvas-title {
