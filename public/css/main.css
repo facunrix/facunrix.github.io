@@ -154,3 +154,46 @@ h2 {
     display: none;
 }
 
+#social-btn {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#social-btn:hover {
+    background-color: #0056b3;
+    transform: scale(0.9);
+}
+
+.social-icons {
+    display: none;
+    position: fixed;
+    bottom: 60px;
+    left: 20px;
+    flex-direction: column;
+    align-items: center;
+    z-index: 999;
+    transition: opacity 0.3s;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #007bff;
+    margin: 5px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #0056b3;
+}
+
+
+
