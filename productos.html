@@ -21,13 +21,6 @@
       display: none;
     }
   }
-  .card:hover .card-body {
-    display: block;
-  }
-  .card.expanded {
-    transform: scale(1.2);
-    z-index: 1;
-  }
 </style>
 
 </head>
@@ -52,7 +45,7 @@
         </div>
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-          <button class="btn btn-outline-light" type="submit">Buscar</button>
+          <button class="btn" type="submit">Buscar</button>
         </form>
         <div class="offcanvas-body ps-0">
           <ul class="navbar-nav fs-5">
@@ -82,6 +75,7 @@
     </div>
   </nav>
 </header>
+
 <!-- secciones de productos -->
 <section id="memorias">
   <div class="d-flex justify-content-center align-items-center">
@@ -328,6 +322,23 @@
   <a href="tu-enlace-de-github" target="_blank"><i class="bi bi-github"></i></a>
   <!-- Agrega más botones según sea necesario -->
 </div>
+
+<button id="social-btn" onclick="toggleSocialIcons()">
+  <i class="bi bi-share"></i>
+</button>
+<!-- Botones desplegables -->
+<div class="social-icons">
+  <a href="mailto:facunrix@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a>
+  <a href="https://instagram.com/facunrixd" target="_blank"><i class="bi bi-instagram"></i></a>
+  <a href="https://github.com/facunrix" target="_blank"><i class="bi bi-github"></i></a>
+  <!-- Agrega más botones según sea necesario -->
+</div>
+<script>
+  function toggleSocialIcons() {
+      var socialIcons = document.querySelector('.social-icons');
+      socialIcons.style.display = (socialIcons.style.display === 'flex') ? 'none' : 'flex';
+  }
+</script>
 
 <script>
   function toggleSocialIcons() {

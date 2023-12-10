@@ -1,65 +1,57 @@
 /* Estilos generales */
 body {
+    /* Configuración basica del cuerpo del documento */
     margin: 0;
-    margin-bottom: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    background-color: #f8f9fa; /* Fondo gris claro */
     font-family: 'Arial', sans-serif;
     line-height: 1.2;
     height: 100%;
 }
 
+/* Footer */
 footer {
-    background-color: #343a40;
-    color: #fff;
+    /* Estilos para el pie de página */
+    background-color: #343a40; /* Fondo gris oscuro */
+    color: #fff; /* Texto blanco */
     text-align: center;
     padding: 15px 0;
     position: relative;
     bottom: 0;
     width: 100%;
     margin-top: 20px;
-    margin-bottom: 0;
 }
 
 /* Navbar */
 .navbar {
-    background-color: #343a40 !important;
-    /* Asegura que el fondo sea oscuro */
+    /* Estilos para la barra de navegación */
+    background-color: #343a40 !important; /* Fondo gris oscuro */
 }
 
-.navbar-brand {
-    color: #fff !important;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.navbar-toggler {
-    color: #fff;
-    border: 1px solid #fff;
-}
-
-.navbar-nav .nav-link {
-    color: #fff !important;
-    font-size: 1.2rem;
+.navbar-brand, .navbar-toggler, .navbar-nav .nav-link {
+    /* Estilos para elementos de la barra de navegación */
+    color: #fff !important; /* Texto blanco */
     font-weight: bold;
 }
 
 .dropdown-menu {
-    background-color: rgba(110, 107, 107, 0.6);
-    /* Color de fondo del dropdown */
+    /* Estilos para menu desplegable */
+    background-color: rgba(110, 107, 107, 0.6); /* Fondo semi-transparente */
 }
 
 .dropdown-item {
-    color: #fff !important;
-    /* Color del texto del dropdown item */
+    /* Estilos para elementos del menú desplegable */
+    color: #fff !important; /* Texto blanco */
 }
 
 .dropdown-item:hover {
-    color: #000 !important;
+    /* Estilos al pasar el mouse sobre elementos del menu desplegable */
+    color: #000 !important; /* Texto negro */
 }
 
 /* Card */
 .card {
+    /* Estilos para tarjetas */
     margin: 40px;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -68,17 +60,31 @@ footer {
 }
 
 .card:hover {
+    /* Estilos al pasar el mouse sobre tarjetas */
     transform: scale(1.05);
 }
 
 .card img {
+    /* Estilos para imágenes dentro de tarjetas */
     width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
+.card:hover .card-body {
+    /* Estilos al pasar el ratón sobre el cuerpo de la tarjeta */
+    display: block;
+}
+
+.card.expanded {
+    /* Estilos para tarjetas expandidas */
+    transform: scale(1.2);
+    z-index: 1;
+}
+
 /* Custom Carousel */
 .custom-carousel {
+    /* Estilos para carruseles personalizados */
     max-width: 300px;
     margin: 10px;
     border-radius: 10px;
@@ -87,11 +93,13 @@ footer {
 
 /* Container */
 .container {
+    /* Estilos para contenedor principal */
     margin-top: 70px;
 }
 
 /* Heading 2 */
 h2 {
+    /* Estilos para encabezados de nivel 2 */
     color: #343a40;
     border-bottom: 2px solid #343a40;
     padding-bottom: 10px;
@@ -99,62 +107,85 @@ h2 {
 
 /* Button Outline Success */
 .btn-outline-success {
-    color: #28a745;
-    border-color: #28a745;
+    /* Estilos para botones de contorno de exito */
+    color: #fff;
+    border-color: #0056b3;
 }
 
 .btn-outline-success:hover {
-    background-color: #28a745;
+    /* Estilos al pasar el raton sobre botones de contorno de exito */
+    background-color: #007bff;
     color: #fff;
+    border-color: #fff;
 }
 
 /* Offcanvas */
 .offcanvas {
-    background-color: rgba(0, 0, 0, 0.6);
-    /* Fondo semi-transparente */
+    /* Estilos para paneles laterales (offcanvas) */
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente */
     width: 30%;
 }
 
-.offcanvas-header {
-    border-bottom: none;
-    /* Sin borde en la cabecera */
-}
-
 .offcanvas-title {
+    /* Estilos para el titulo en paneles laterales */
     color: #fff;
-    /* Color del titulo */
 }
 
-
+/* Navbar Links */
 .navbar-nav {
+    /* Estilos para enlaces de la barra de navegacion */
     text-align: center;
-    /* Centrar texto del menu */
 }
 
 .navbar-nav a {
-    color: #fff !important;
-    /* Color del texto del menu */
+    /* Estilos para enlaces de la barra de navegacion */
+    color: #fff !important; /* Texto blanco */
+    transition: color 0.3s ease;
 }
 
-.btn-close {
+.navbar-nav a:hover {
+    /* Estilos al pasar el raton sobre enlaces de la barra de navegacion */
+    color: #007bff !important; /* Texto azul */
+}
+
+/* Estilos boton */
+.btn {
+    /* Estilos generales para botones */
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn:hover {
+    /* Estilos al pasar el raton sobre botones */
     color: #fff;
-    /* Color del boton de cierre */
+    background-color: #0056b3;
+}
+
+/* Close boton */
+.btn-close {
+    /* Estilos para el botón de cierre */
+    color: #fff;
 }
 
 .btn-close:hover {
-    color: #fff;
-    /* Color del boton de cierre al pasar el ratón */
+    /* Estilos al pasar el ratón sobre el botón de cierre */
+    color: #000000;
 }
 
+/* FAQ */
 .faq-item {
+    /* Estilos para elementos de preguntas frecuentes */
     margin-bottom: 20px;
 }
 
 .faq-answer {
+    /* Estilos para respuestas de preguntas frecuentes (inicialmente ocultas) */
     display: none;
 }
 
+/* Social Icons */
 #social-btn {
+    /* Estilos para el botón de redes sociales */
     position: fixed;
     bottom: 10px;
     left: 10px;
@@ -169,11 +200,13 @@ h2 {
 }
 
 #social-btn:hover {
+    /* Estilos al pasar el mouse sobre el boton de redes sociales */
     background-color: #0056b3;
     transform: scale(0.9);
 }
 
 .social-icons {
+    /* Estilos para iconos de redes sociales (inicialmente ocultos) */
     display: none;
     position: fixed;
     bottom: 60px;
@@ -185,6 +218,7 @@ h2 {
 }
 
 .social-icons a {
+    /* Estilos para enlaces de redes sociales */
     text-decoration: none;
     color: #007bff;
     margin: 5px;
@@ -192,8 +226,8 @@ h2 {
 }
 
 .social-icons a:hover {
+    /* Estilos al pasar el raton sobre enlaces de redes sociales */
     color: #0056b3;
 }
-
 
 
