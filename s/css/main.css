@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* todos los elementos de la pagina */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #121212; 
+  margin: 0;
+}
+
+/* fondo epico */
+.background-a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  --s: 200px; /* tamaño cuadraditos*/
+  --c1: #1d1d1d;
+  --c2: #4e4f51;
+  --c3: #3c3c3c;
+
+  background: repeating-conic-gradient(
+        from 30deg,
+        #0000 0 120deg,
+        var(--c3) 0 180deg
+      )
+      calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
+    repeating-conic-gradient(
+      from 30deg,
+      var(--c1) 0 60deg,
+      var(--c2) 0 120deg,
+      var(--c3) 0 180deg
+    );
+  background-size: var(--s) calc(var(--s) * 0.577);
+}
+
+/* estilo del wrapper */
+.wrapper {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background: #1a1a1a; 
+  border-radius: 20px;
+  padding: 40px;
+  overflow: hidden;
+  color: #ffffff; 
+}
+
+/* contenedor de formularios */
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: 1s ease-in-out; 
+}
+
+/* traslado formulario de login hacia arriba */
+.wrapper.active .form-wrapper.sign-in {
+  transform: translateY(-450px); 
+}
+
+
+/* defino la posicion del formulario de registro */
+.wrapper .form-wrapper.sign-up {
+  position: absolute;
+  top: 450px;
+  left: 0;
+}
+
+/* se traslada el formulario al activar el wrapper, hacia arriba */
+.wrapper.active .form-wrapper.sign-up {
+  transform: translateY(-450px); 
+}
+
+h2 {
+  text-align: center;
+}
+
+/* inputs */
+.input-group {
+  position: relative;
+  margin: 30px 0;
+  border-bottom: 2px solid #0ef; 
+}
+
+
+/* label */
+.input-group label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-70%);
+  font-size: 16px;
+  color: #0ef;
+  pointer-events: none;
+  transition: .5s; 
+}
+
+
+/* input */
+.input-group input {
+  width: 320px;
+  height: 40px;
+  font-size: 16px;
+  color: #ffffff; 
+  padding: 0 5px;
+  background: transparent; 
+  border: none;
+  outline: none;
+}
+
+
+/* eleva los label */
+.input-group input:focus~label,
+.input-group input:valid~label {
+  top: -5px; 
+}
+
+
+/* botones */
+button {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  background: #0ef; 
+  font-size: 16px;
+  color: #121212; 
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 30px;
+  border: none;
+}
+
+/* enlace de registro */
+.signUp-link {
+  font-size: 14px;
+  text-align: center;
+  margin: 15px 0;
+}
+
+
+/* parrafo de registro */
+.signUp-link p {
+  color: #ffffff; 
+}
+
+/* vinculo a otro formulario */
+.signUp-link p a {
+  color: #0ef; 
+  text-decoration: none;
+}
+
+
+
+/* mostrar contraseña */
+.btn-ojito {
+  border-radius: 6px;
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+  left: 80%;
+  bottom: 76px;
+  background: #0ef; 
+  color: #000000;
+}
+
+
